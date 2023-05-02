@@ -1,5 +1,5 @@
 function ParemPaan({ openedMovies }) {
-  if (openedMovies == "") {
+  if (openedMovies === "") {
     return null;
 }
   return (
