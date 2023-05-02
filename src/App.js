@@ -11,12 +11,11 @@ function App() {
 
   useEffect(() => {
     async function fetchMovies() {
-      const fetched_movies = await readData();
-      setMovies(fetched_movies);
+      const fetchedMovies = await readData();
+      setMovies(fetchedMovies);
     }
 
     fetchMovies();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const clickChange = (index) => {
@@ -27,7 +26,7 @@ function App() {
   return (
     <>
       <div className="container-fluid p-4 bg-dark shadow-sm text-warning">
-        <h1>Filmid App</h1><OtsiFilmi />
+        <h1>Filmide app</h1><OtsiFilmi />
       </div>
       <div className="row">
         <div className="col m-2">
