@@ -18,8 +18,8 @@ function App() {
   }, []);
 
   const clickChange = (index) => {
-    const selected = movies[index];
-    setOpenedMovies(selected);
+    const opened = movies[index];
+    setOpenedMovies(opened);
   };
 
   return (
